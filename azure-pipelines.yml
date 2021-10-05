@@ -1,3 +1,4 @@
+
 # Node.js
 # Build a general Node.js project with npm.
 # Add steps that analyze code, save build artifacts, deploy, and more:
@@ -17,10 +18,10 @@ steps:
 
 - task: Npm@1
   inputs:
-    command: 'ci'
+    command: 'install'
     customRegistry: 'useFeed'
     customFeed: '8ca08014-856d-4fa4-bc94-ba7bbce3730d/e396a66c-be7f-448b-b9f7-19d7b24db2fe'
 
-- script: |
+- script: 
     npm run build
   displayName: 'npm install and build'
